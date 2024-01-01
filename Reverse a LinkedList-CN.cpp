@@ -32,15 +32,14 @@ Node* reverseLinkedList(Node *head)
     // Write your code here
     /*Iterative approach TC=O(n) SC=O(1)
     Node *prev=NULL;
-    while(head->next!=NULL)
+    while(head!=NULL)
     {
         Node *curr=head;
         head=head->next;
         curr->next=prev;
         prev=curr;
     }
-    head->next=prev;
-    return head;
+    return prev;
     */
     //recursive TC=O(n) 
     if(head->next==NULL)return head;
