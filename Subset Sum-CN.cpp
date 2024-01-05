@@ -11,7 +11,7 @@ void find(int i,vector<int> &num,int n,vector<int> &res,int sum)
 }
 vector<int> subsetSum(vector<int> &num){
 	// Write your code here.
-	//TC=O(2^n) SC=O(n)
+	//TC=O(2^n) for recursion +O(2^nlog(2^n)) for sorting      SC=O(n)
 	vector<int> res;	
 	int n=num.size();
 	find(0,num,n,res,0);
